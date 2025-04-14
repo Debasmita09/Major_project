@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #c0e0fa;
+}
+
+.logo img{
+    width: 115px;
+    height: 39px;
+    box-shadow: 0px 0px 12px rgba(65, 105, 255, 0.7);
+    border: none;
+    border-radius: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+}
+h5 {
+    text-align: center;
+    color: #041d49;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h4{
+    color:#759fe3;
+}
+h2{
+    color:#759fe3;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #24323d;
+    color:white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_column, .second_column {
+    
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.first_column {
+    border-right: 2px solid #ddd; 
+    padding-right: 40px;
+    width: 30%;
+}
+
+.second_column {
+    padding-left: 10px;
+    margin-right: 35px; 
+    width: 60%;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+button {
+    width: 30%;
+    padding: 10px;
+    background-color: #4f7dc8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a3bff0;
+    color:#021728;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #24323d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width:100%;
+    
+    left:0;
+    bottom:0;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-links {
+    margin-top: 10px;
+  }
+  
+  footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+
+

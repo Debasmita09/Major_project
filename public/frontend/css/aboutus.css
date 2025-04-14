@@ -1,0 +1,363 @@
+
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Body Styles */
+      body {
+        
+        font-family: "Poppins",sans-serif;
+        background-color: #c0e0fa;
+        color: #333;
+        line-height: 1.6;
+      }
+      
+      /* Header Styles */
+      header {
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+       
+      }
+      
+    
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      
+      header nav ul li a:hover {
+        text-decoration: underline;
+      }
+      
+      .logo img{
+        width: 115px;
+        height: 39px;
+        box-shadow: 0px 0px 12px rgba(65, 105, 255, 0.7);
+        border: none;
+        border-radius: 0;
+    }
+    
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        
+    }
+      
+      /* Hero Section Styles */
+      .hero {
+        background: url('job.jpg') ;
+        background-size: 100%;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+      }
+      
+      .hero h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #ebe8e8;
+      }
+    
+      .hero button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .hero button:hover {
+        background-color: #991d1d;
+      }
+    
+      .hero input {
+        padding: 10px 20px;
+        background-color: #f8f7f7;
+        color: rgb(16, 16, 16);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+    
+      .search-bar {
+        margin-top: 20px;
+      }
+      
+      .search-bar input {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .search-bar button {
+        padding: 10px 20px;
+        background-color: #4c5849;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .search-bar button:hover {
+        background-color: rgba(0, 0, 0, 0.1)1;
+      }
+      
+      /* Categories Section */
+      .categories {
+        background-color: #333;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      
+      .categories h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      
+      .category-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      .category {
+        background-color: rgb(244, 238, 238);
+        padding: 20px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+      }
+      
+      .category h4 {
+        font-size: 20px;
+        box-shadow: 2 2px 5px red;
+        color: #0e0909;
+      }
+      
+      .category:hover {
+        background-color: #991d1d;
+      }
+      
+      /* Featured Jobs Section */
+      .featured-jobs {
+        padding: 40px 20px;
+        background-color: #333;
+        
+        text-align: center;
+      }
+      
+      .featured-jobs h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      
+      .job-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      
+      .job {
+        background-color: rgb(244, 238, 238);
+        padding: 20px;
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px #2d2121;
+        text-align: center;
+      }
+      
+      .job h4 {
+        font-size: 22px;
+        color: #333;
+      }
+      
+      .job p {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .job button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .job button:hover {
+        background-color: #991d1d;
+      }
+      
+      /* Footer Styles */
+      footer {
+        background-color: #2d2121;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      footer p {
+        margin-bottom: 10px;
+      }
+      
+      footer .footer-links {
+        margin-top: 10px;
+      }
+      
+      footer .footer-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      
+      footer .footer-links a:hover {
+        text-decoration: underline;
+      }
+    
+     /*endsabout us page*/ 
+    
+    
+    
+    
+     
+    
+      /* blogs_resume_section or blogs_interview*/
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        color: #333;
+    }
+    p {
+        line-height: 1.6;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        padding: 5px 0;
+    }
+    .tip {
+        background: #fffae6;
+        padding: 10px;
+        border-left: 5px solid #ffcc00;
+        margin: 10px 0;
+    }
+    .example {
+        background: #e6f7ff;
+        padding: 10px;
+        border-left: 5px solid #007acc;
+        margin: 10px 0;
+    }
+    .highlight {
+        font-weight: bold;
+        color: #007acc;
+    }
+    /* ends blogs resume section*/
+    
+    
+    /*about us section*/
+    .aboutcontainer {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .section {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #eef;
+      border-left: 5px solid #007BFF;
+    }
+    .review {
+      background: #fff;
+      padding: 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px gold;
+    }
+    .stars {
+      color: #FFD700;
+    }
+    
+    
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+      color: #666;
+    }
+    .section {
+      margin: 20px 0;
+      padding: 15px;
+      background: #eef;
+      border-left: 5px solid #007BFF;
+      border-radius: 5px;
+    }
+    .team {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .team-member {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    /*ends about us section*/
+    
+    
+    
+    

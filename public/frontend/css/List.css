@@ -1,0 +1,145 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: #333;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+   
+  }
+  
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+.logo img{
+    width: 115px;
+    height: 39px;
+    box-shadow: 0px 0px 12px rgba(65, 105, 255, 0.7);
+    border: none;
+    border-radius: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.job-details {
+    background-color: #c0e0fa;
+    color:black;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-header .company-info {
+    margin-top: 10px;
+}
+
+.job-header .company-info p {
+    font-size: 16px;
+    color: black;
+}
+
+.job-description h3, .job-description h4 {
+    color: black;
+    margin-top: 20px;
+}
+
+.job-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.job-application {
+    margin-top: 30px;
+}
+
+.job-application .btn {
+    background-color: #044761;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.job-application .btn:hover {
+    background-color: white;
+    color:black;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #2d2121;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-links {
+    margin-top: 10px;
+  }
+  
+  footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
