@@ -28,7 +28,7 @@
 
     <div class="aboutcontainer">
         <h1>About Us</h1>
-        <p>Welcome to [careerhub 🐝], your trusted platform for finding the best job opportunities. Our mission is to connect job seekers with top employers, making job searching effortless and efficient.</p>
+        <p>Welcome to [careerhub 🐝], your trusted platform  for finding the best job opportunities. Our mission is to connect job seekers with top employers, making job searching effortless and efficient.</p>
         
         <h2>Why Choose Us?</h2>
         <div class="section"> ✔ Thousands of job listings updated daily<br>✔ Wide range of job listings<br>✔ Verified employers<br>✔ Easy application process<br>✔ Career resources and guidance<br>✔ Resume guidance, and interview preparation</div>
