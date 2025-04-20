@@ -15,7 +15,7 @@ Route::get('/terms', function () {
     return view('TermsAndCondition');
 });
 
-Route::get('/aboutus', function () {
+Route::get('/about', function () {
     return view('aboutus');
 });
 

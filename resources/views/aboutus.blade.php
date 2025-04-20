@@ -6,7 +6,7 @@
     <title>CareerHub</title>
     <link rel="stylesheet" href="{{url('frontend/css/aboutus.css')}}">
 <body>
-      <!-- Header Section -->
+     
   <header>
   <div class="header-left">
         <a href="#" class="logo"><img src="{{url('image/logo.png')}}"></a>
