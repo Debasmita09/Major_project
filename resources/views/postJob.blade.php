@@ -21,7 +21,7 @@
         <label><a href="{{url('/postJob')}}">Post a job</a></label><br><hr><br>
         <label><a href="{{url('/myJob')}}">My Jobs</a></label><br><hr><br>
         <label><a href="{{url('/appliedJob')}}">Jobs Applied</a></label><br><hr><br>
-        <label><a href="{{url('/savedJob')}}">Saved Jobs</a></label><br><hr><br>
+        <label><a href="{{url('/savedJob')}}">Lead Jobs</a></label><br><hr><br>
        </form> 
    </div>
    <div class="second_column">
@@ -31,19 +31,41 @@
             <input type="text"  name="title" placeholder="Job Title" required>
             <br>
             <label for="category">Category*</label>
-            <input type="text"  name="category" placeholder="Enter the Job Category" required>
+            <select class="px-4 py-2 border rounded-md focus:outline-none">
+            <option>Technical</option>
+            <option>Non-Technical</option>
+            </select>
             <br>
-            <label for="nature">Job Nature*</label>
-            <input type="text"  name="nature" placeholder="Job Nature-Part-time/Full-time" required>
             <br>
-            <label for="vacancy">Vacancy*</label>
-            <input type="text"  name="vacancy" placeholder="Vacancy" required>
+            <label for="vacancy">Designation*</label>
+            <select class="px-4 py-2 border rounded-md focus:outline-none">
+            <option>Software Developer</option>
+            <option>Web Developer</option>
+            <option>Accountant</option>
+            <option>Field Sales</option>
+          </select>
             <br>
-            <label for="salary">Salary</label>
+            <br>
+            <label for="vacancy">JobType*</label>
+            <select class="px-4 py-2 border rounded-md focus:outline-none">
+            <option>FullTime</option>
+            <option>PartTime</option>
+            <option>Internship</option>
+          </select>
+            <br>
+            <br>
+            <label for="salary">Salary*</label>
             <input type="text"  name="salary" placeholder="Salary" required>
             <br>
-            <label for="location">Location*</label>
-            <input type="text"  name="location" placeholder="Location" required>
+            <br>
+            <label for="vacancy">City*</label>
+            <select class="px-4 py-2 border rounded-md focus:outline-none">
+            <option>Noida</option>
+            <option>Kolkata</option>
+            <option>Bangalore</option>
+            <option>Hydrabad</option>
+          </select>
+            <br>
             <br>
             <label for="description">Description*</label><br>
             <textarea  placeholder="Description" name="description" rows="5" required></textarea>

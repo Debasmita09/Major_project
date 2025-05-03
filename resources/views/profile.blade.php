@@ -21,7 +21,7 @@
         <label><a href="{{url('/postJob')}}">Post a job</a></label><br><hr><br>
         <label><a href="{{url('/myJob')}}">My Jobs</a></label><br><hr><br>
         <label><a href="{{url('/appliedJob')}}">Jobs Applied</a></label><br><hr><br>
-        <label><a href="{{url('/savedJob')}}">Saved Jobs</a></label><br><hr><br>
+        <label><a href="{{url('/savedJob')}}">Lead Jobs</a></label><br><hr><br>
        </form> 
    </div>
    <div class="second_column">

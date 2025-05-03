@@ -21,7 +21,7 @@
         <label><a href="{{url('/postJob')}}">Post a job</a></label><br><hr><br>
         <label><a href="{{url('/myJob')}}">My Jobs</a></label><br><hr><br>
         <label><a href="{{url('/appliedJob')}}">Jobs Applied</a></label><br><hr><br>
-        <label><a href="{{url('/savedJob')}}">Saved Jobs</a></label><br><hr><br>
+        <label><a href="{{url('/savedJob')}}">Lead Jobs</a></label><br><hr><br>
        </form> 
    </div>
    <div class="second_column">
@@ -30,20 +30,18 @@
             <div class="table-box">
                 <div class="table-row table-head">
                     <div class="table-cell first-cell">
+                        <p>Applicants No</p>
+                    </div>
+                    <div class="table-cell">
                         <p>Title</p>
                     </div>
                     <div class="table-cell">
-                        <p>Job Created</p>
-                    </div>
-                    <div class="table-cell">
-                        <p>Applicants No</p>
+                        <p>Applied On</p>
                     </div>
                     <div class="table-cell">
                         <p>Status</p>
                     </div>
-                    <div class="table-cell last-cell">
-                        <p>Action</p>
-                    </div> 
+                     
                 </div>
             
         </form>

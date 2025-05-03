@@ -2,6 +2,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmployeeDetailController;
 
 Route::get('/', function () {
     return view('home');
@@ -94,3 +95,9 @@ Route::get('/blog3', function () {
 Route::get('/faq', function () {
     return view('FAQ');
 });
+
+Route::get('/applied', function  (){
+    return view('Applied');
+});
+
+Route::resource('employee-details', EmployeeDetailController::class);

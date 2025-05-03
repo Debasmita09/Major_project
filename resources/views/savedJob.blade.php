@@ -21,11 +21,11 @@
         <label><a href="{{url('/postJob')}}">Post a job</a></label><br><hr><br>
         <label><a href="{{url('/myJob')}}">My Jobs</a></label><br><hr><br>
         <label><a href="{{url('/appliedJob')}}">Jobs Applied</a></label><br><hr><br>
-        <label><a href="{{url('/savedJob')}}">Saved Jobs</a></label><br><hr><br>
+        <label><a href="{{url('/savedJob')}}">Lead Jobs</a></label><br><hr><br>
        </form> 
    </div>
    <div class="second_column">
-    <h2>Saved Jobs</h2><br><br>
+    <h2>Lead Jobs</h2><br><br>
         <form action="JobDetail.php" method="POST">
             <div class="table-box">
                 <div class="table-row table-head">
@@ -36,13 +36,13 @@
                         <p>Job Created</p>
                     </div>
                     <div class="table-cell">
-                        <p>Applicants No</p>
+                        <p>Employee Name</p>
                     </div>
                     <div class="table-cell">
-                        <p>Status</p>
+                        <p>Phone No.</p>
                     </div>
                     <div class="table-cell last-cell">
-                        <p>Action</p>
+                        <p>Download CV</p>
                     </div> 
                 </div>
             

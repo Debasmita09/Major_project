@@ -25,8 +25,9 @@
       </div>
 
       <div class="header-right">
-        <button class="login-btn" onclick="toggleModal()"><a href="{{url('/login')}}">Login</a></button>
-        <button class="login-btn" onclick="toggleModal()"><a href="{{url('/register')}}">Register</a></button>
+      <button class="login-btn" onclick="window.location.href='{{ url('/login') }}'">Login</button>
+      <button class="login-btn" onclick="window.location.href='{{ url('/register') }}'">Register</button>
+
 
         <div class="dropdown">
           <button class="menu-btn" onclick="toggleDropdown()">☰</button>
@@ -82,13 +83,15 @@
           class="relative flex flex-wrap w-full pt-2 pr-4 pb-4 pl-4 bg-white rounded-lg shadow-md sm:space-y-0 sm:space-x-2"
         >
           <select class="px-4 py-2 border rounded-md focus:outline-none">
-            <option>Pune</option>
+            <option>Noida</option>
             <option>Kolkata</option>
             <option>Bangalore</option>
+            <option>Hydrabad</option>
           </select>
           <select class="px-4 py-2 border rounded-md focus:outline-none">
-            <option>Technician</option>
+            <option>Software Developer</option>
             <option>Web Developer</option>
+            <option>Accountant</option>
             <option>Field Sales</option>
           </select>
           <select class="px-4 py-2 border rounded-md focus:outline-none">
