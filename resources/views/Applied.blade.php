@@ -7,6 +7,8 @@
   <link rel="applied.css" href="{{url('frontend/css/applied.css')}}">
   </head>
 <body>
+<x-header />
+  
   <div class="header">
     <div class="logo-box">
       <img src="https://i.imgur.com/3v3wXHJ.png" alt="Acme Corp Logo" />

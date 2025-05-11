@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class EmployeeDetail extends Model
 {
+    // Mass assignable attributes
     protected $fillable = [
         'user_id',
         'class_10_school_name',
@@ -26,5 +28,16 @@ class EmployeeDetail extends Model
         'certificate_links',
         'resume_path',
     ];
-    
+
+    // Optional: Define the table if it's not the plural of the model name
+    // protected $table = 'employee_details';
+
+    /**
+     * Relationship: Each employee detail belongs to a user.
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
+    

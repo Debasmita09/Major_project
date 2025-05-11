@@ -63,7 +63,7 @@
                 <p>Benefits: Health insurance, 521(k), Paid Time Off, Remote work option</p>
 
                 <div class="apply-btn">
-                    <a href="apply.html" class="btn">Apply Now</a>
+                <a href="{{ Auth::check() ? url('/apply') : url('/login') }}" class="btn">Apply Now</a>
                 </div>
             </div>
 

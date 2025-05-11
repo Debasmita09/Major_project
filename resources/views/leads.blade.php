@@ -14,28 +14,27 @@
   
    <div class="first_column">
    <x-sidebar />
- 
+
    </div>
    <div class="second_column">
-    <h2>My Jobs</h2>
-    
+    <h2>Lead Jobs</h2><br><br>
         <form action="JobDetail.php" method="POST">
             <div class="table-box">
                 <div class="table-row table-head">
                     <div class="table-cell first-cell">
-                        <p>Applicants No</p>
-                    </div>
-                    <div class="table-cell">
                         <p>Title</p>
                     </div>
                     <div class="table-cell">
-                        <p>Created on</p>
+                        <p>Job Created</p>
                     </div>
                     <div class="table-cell">
-                        <p>No of Apply</p>
+                        <p>Employee Name</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Phone No.</p>
                     </div>
                     <div class="table-cell last-cell">
-                        <p>Action</p>
+                        <p>Download CV</p>
                     </div> 
                 </div>
             

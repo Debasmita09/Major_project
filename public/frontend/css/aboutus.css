@@ -15,33 +15,6 @@
         line-height: 1.6;
       }
       
-      /* Header Styles */
-      header {
-        
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        background-color: #333;
-        color: white;
-       
-      }
-      
-    
-      header nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-      }
-      
-      header nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-      }
-      
-      header nav ul li a:hover {
-        text-decoration: underline;
-      }
       
       .logo img{
         width: 115px;
@@ -51,21 +24,6 @@
         border-radius: 0;
     }
     
-    .header-right {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-        
-    }
       
       /* Hero Section Styles */
       .hero {

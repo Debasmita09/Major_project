@@ -6,20 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUserRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+class UserController  extends Controller
 {
-    // List all users
-    public function index()
-    {
-        $users = User::all();
-
-        return response()->json([
-            'message' => 'Users fetched successfully.',
-            'users' => $users
-        ]);
-    }
-
     // Store new user
     public function store(StoreUserRequest $request)
     {
@@ -32,13 +22,17 @@ class UserController extends Controller
             'last_name'    => $validated['last_name'],
             'email'        => $validated['email'],
             'phone_number' => $validated['phone_number'],
-            'password'     => Hash::make($validated['password']), // Always hash passwords
+            'password'     => Hash::make($validated['password']),
             'is_employer'  => $validated['is_employer'],
         ]);
 
+        // Log the user in
+        Auth::login($user);
+
+        // Redirect based on is_employer flag
         return response()->json([
-            'message' => 'User created successfully.',
-            'user'    => $user
-        ], 201);
+            'message' => 'Registration successful',
+            'redirect_url' => $user->is_employer ? '/postJob' : '/profile'
+        ]);
     }
 }
