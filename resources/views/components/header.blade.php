@@ -23,7 +23,7 @@
             <button class="menu-btn" onclick="toggleDropdown()">☰</button>
             <div class="dropdown-content" id="dropdownMenu">
                 <a href="#" id="myProfileLink"><i class="fa-solid fa-user"></i> My Profile</a>
-                <a href="{{ url('/details') }}">Job Details</a>
+                <!-- <a href="{{ url('/details') }}">Job Details</a> -->
                 <a href="{{ url('/about') }}">About Us</a>
                 <a href="{{ url('/terms') }}">Terms & Conditions</a>
                 <a href="{{ url('/blog') }}">Blogs</a>

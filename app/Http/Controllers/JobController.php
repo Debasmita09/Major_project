@@ -55,16 +55,16 @@ class JobController extends Controller
                 ->orWhere('job_description', 'like', '%' . $request->keyword . '%');
         }
 
-        if ($request->filled('location')) {
-            $query->where('location', $request->location);
+        if ($request->filled('city')) {
+            $query->where('city', $request->city);
         }
 
         if ($request->filled('category')) {
-            $query->where('job_category', $request->category);
+            $query->where('category', $request->category);
         }
 
         if ($request->filled('type')) {
-            $query->where('job_type', $request->type);
+            $query->where('job_type', $request->job_type);
         }
 
         $jobs = $query->latest()->get();

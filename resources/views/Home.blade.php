@@ -58,26 +58,32 @@
         </div>
         <div
           class="relative flex flex-wrap w-full pt-2 pr-4 pb-4 pl-4 bg-white rounded-lg shadow-md sm:space-y-0 sm:space-x-2">
-          <select name="location" class="px-4 py-2 border rounded-md focus:outline-none">
-            <option value="">Select Location</option>
+          <select name="city" class="px-4 py-2 border rounded-md focus:outline-none">
+            <option value="">City</option>
             <option value="Noida" {{ request('location') == 'Noida' ? 'selected' : '' }}>Noida</option>
             <option value="Kolkata" {{ request('location') == 'Kolkata' ? 'selected' : '' }}>Kolkata</option>
             <option value="Bangalore" {{ request('location') == 'Bangalore' ? 'selected' : '' }}>Bangalore</option>
             <option value="Hyderabad" {{ request('location') == 'Hyderabad' ? 'selected' : '' }}>Hyderabad</option>
           </select>
           <select name="category" class="px-4 py-2 border rounded-md focus:outline-none">
-            <option value="">Select Category</option>
-            <option value="Software Developer" {{ request('category') == 'Software Developer' ? 'selected' : '' }}>Software Developer</option>
-            <option value="Web Developer" {{ request('category') == 'Web Developer' ? 'selected' : '' }}>Web Developer</option>
-            <option value="Accountant" {{ request('category') == 'Accountant' ? 'selected' : '' }}>Accountant</option>
-            <option value="Field Sales" {{ request('category') == 'Field Sales' ? 'selected' : '' }}>Field Sales</option>
+            <option value="">Category</option>
+            <option value="Technical" {{ request('category') == 'Technical' ? 'selected' : '' }}>Technical</option>
+            <option value="Non-Technical" {{ request('category') == 'Non-Technical' ? 'selected' : '' }}>Non-Technical</option>
           </select>
           <select name="type" class="px-4 py-2 border rounded-md focus:outline-none">
-            <option value="">Select Job Type</option>
+            <option value="">Job Type</option>
             <option value="Full Time" {{ request('type') == 'Full Time' ? 'selected' : '' }}>Full Time</option>
             <option value="Part Time" {{ request('type') == 'Part Time' ? 'selected' : '' }}>Part Time</option>
             <option value="Internship" {{ request('type') == 'Internship' ? 'selected' : '' }}>Internship</option>
           </select>
+          <div class="flex justify-end mt-2 pr-4">
+            <button type="button"
+              onclick="resetFilters()"
+              class="px-4 py-2 text-sm text-white bg-blue-600 rounded-md hover:bg-gray-600">
+              Reset 
+            </button>
+          </div>
+
         </div>
       </form>
     </div>
@@ -284,6 +290,16 @@
   </footer>
 
   <script src="{{url('frontend/js/javascript.js')}}"></script>
+  <script>
+    function resetFilters() {
+      const form = document.querySelector('form');
+      form.reset();
+
+      // Manually clear query string in URL
+      window.location.href = "{{ route('search.jobs') }}";
+    }
+  </script>
+
 </body>
 
 </html>
