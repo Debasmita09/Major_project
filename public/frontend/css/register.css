@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-*{
+
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    
     background: #c0e0fa;
+    padding-top: 100px; 
+    flex-direction: column;
 }
+
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
@@ -27,51 +32,36 @@ body{
     width: 100%;
     z-index: 10;
 }
-.logo img{
+
+.logo img {
     width: 115px;
     height: 39px;
     box-shadow: 0px 0px 12px rgba(65, 105, 255, 0.7);
-    border: none;
-    border-radius: 0;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    
-}
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     max-width: 350px;
+    width: 100%;
     background: #24323d;
     padding: 25px;
     border-radius: 20px;
-    position: relative;
+   
+    margin-bottom: 3rem;
 }
 
-.title{
+.title {
     font-size: 28px;
     color: #759fe3;
     font-weight: 600;
-    letter-spacing: 0.3px;
-    position: relative;
     text-align: center;
 }
 
 .message,
-.signin{
+.signin {
     color: #fff;
     font-size: 14px;
     text-align: center;
@@ -80,57 +70,53 @@ body{
 .signin a {
     color: #759fe3;
     text-decoration: none;
-    transition: 0.3px;
+    transition: 0.3s;
 }
 
 .signin a:hover {
     color: #adccfd;
 }
 
+
 .form-group {
     display: flex;
-    width: 100%;
-    gap: 6px;
+    gap: 10px;
 }
-
 
 .form label {
     position: relative;
+    display: block;
 }
+
 
 .form label input {
     width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: none;
+    padding: 10px;
+    padding-right: 35px;
     border: none;
     border-radius: 10px;
+    background: #fff;
 }
+
 
 .form label input + span {
     position: absolute;
-    left: 20px;
-    top: 15px;
+    left: 15px;
+    top: 12px;
     color: #24323d;
     font-size: 0.9em;
-    cursor: text;
     transition: 0.3s ease;
-}
-
-.form label input:placeholder-shown + span {
-    top: 15px;
-    font-size: 0.9em;
+    pointer-events: none;
 }
 
 .form label input:focus + span,
-.form label input:valid + span{
-    top: 30px;
+.form label input:valid + span {
+    top: -8px;
     font-size: 0.7em;
     font-weight: 600;
+    color: #0452ab;
 }
 
-.form label input:valid + span {
-    color:#0452ab;
-}
 
 .form label .icon {
     position: absolute;
@@ -139,57 +125,57 @@ body{
     transform: translateY(-50%);
     color: #24323d;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 9;
 }
 
-.submit{
+
+label[for="isRecruiter"], .form input[type="checkbox"] {
+    cursor: pointer;
+}
+
+
+.submit {
     border: none;
-    outline: none;
     background: #4f7dc8;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    transform: 0.3s ease;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .submit:hover {
     background: #a3bff0;
-    color:#021728;
-    transition: 0.3s;
+    color: #021728;
 }
+
 
 footer {
     background-color: #24323d;
     color: white;
     padding: 20px;
     text-align: center;
-    width:100%;
-    position:fixed;
-    left:0;
-    bottom:0;
-  }
-  
-  footer p {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
     margin-bottom: 10px;
-  }
-  
-  footer .footer-links {
+}
+
+.footer-links {
     margin-top: 10px;
-  }
-  
-  footer .footer-links a {
+}
+
+.footer-links a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-  }
-  
-  footer .footer-links a:hover {
+}
+
+.footer-links a:hover {
     text-decoration: underline;
-  }
+}

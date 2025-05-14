@@ -5,25 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareerHub</title>
     <link rel="stylesheet" href="{{url('frontend/css/aboutus.css')}}">
+</head>
+
 <body>
-      <!-- Header Section -->
-  <header>
-  <div class="header-left">
-        <a href="#" class="logo"><img src="{{url('image/logo.png')}}"></a>
-      </div>
-      <h1>Careerhub</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="{{url('/')}}">Home</a></li>
-        <li><a href="{{url('/details')}}">Job Search</a></li>
-        <li><a href="{{url('/profile')}}">Employers</a></li>
-        <li><a href="{{url('/blog')}}">Blogs</a></li>
-        <li><a href="{{url('/login')}}">Login</a></li>
-        <li><a href="{{url('/register')}}">Register</a></li>
-      </ul>
-    </nav>
-  </header>
+  <x-header />
+  
+
 
 
     <div class="aboutcontainer">

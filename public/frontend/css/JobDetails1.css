@@ -1,0 +1,53 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #bbb;
+    color: #000;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+}
+
+.sidebar-nav hr {
+    border: 0;
+    height: 1px;
+    background: #aaa;
+    margin: 10px 0;
+}
