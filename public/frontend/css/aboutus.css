@@ -220,6 +220,7 @@
     }
     h1, h2 {
         color: #333;
+        margin-top: 25px;
     }
     p {
         line-height: 1.6;

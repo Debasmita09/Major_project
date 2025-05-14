@@ -79,7 +79,7 @@
           <div class="flex justify-end mt-2 pr-4">
             <button type="button"
               onclick="resetFilters()"
-              class="px-4 py-2 text-sm text-white bg-blue-600 rounded-md hover:bg-gray-600">
+              class="px-4 py-2 text-sm text-white bg-blue-600 rounded-md hover:bg-blue-700">
               Reset 
             </button>
           </div>
